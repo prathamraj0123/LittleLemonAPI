@@ -1,0 +1,64 @@
+Please read everything before testing. All accounts are provided below after the reading...
+
+Since Week 4 'Project structure and API routes' and 'Peer graded assignment' don't match with eachother 100%. So below are few point that needs attention.
+
+Point 1 (Peer) - The admin can assign users to the manager group. 
+    So project is implemented such that manager is not able to assign users to manager group.
+
+Point 2 (API routes) - Manager can perform CRUD on menuitem model.
+    So project is implemented such that manager is able to perform CRUD.
+
+Point 3 (API routes) - CUSTOMER -> POST: /api/orders
+    To order item Customers can simply POST without including any detail. Order will be placed if cart has items.
+
+Point 4 (Peer) - Customers can browse all the menu items at once. 
+    It can be done using the below url and setting the limit to total items in menu. For example: total_menuitem is 16 at the moment so the url will be
+                http://127.0.0.1:8000/api/menu-items?limit=16
+   
+
+Additional:
+1) Djoser endpoints:
+   a) /api/users/
+   b) /api/users/me
+   c) /api/token/login/
+
+2) Category endpoints:
+    a) /api/categories
+
+3) For easier testing there is a url commented in project.urls. Using that will give access to login on browsable api view.
+
+4) Throttling is commented in settings.py in project folder.
+
+5) Session is commented in REST_FRAMEWORK in settings.py in project folder as intructed by the staff.
+
+
+ADMIN USER:
+username = abc
+password = abc
+
+
+Manager:
+username = nandu
+password = nandu@123@
+
+username = prat
+password = prat@123
+
+
+Delivery Crew:
+username = pandey
+password = neelesh@123
+
+username = shyam
+password = shyam@123@
+
+
+Customers:
+username = adam
+password = adam@123
+
+username = sohan
+password = sohan@123@
+
+username = ankur
+password = ankur@123@
