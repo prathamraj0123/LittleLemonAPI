@@ -29,7 +29,7 @@ Additional:
 
 4) Throttling is commented in settings.py in project folder.
 
-5) Session is commented in REST_FRAMEWORK in settings.py in project folder as intructed by the staff.
+5) Session is commented in REST_FRAMEWORK in settings.py in project folder as instructed by the staff.
 
 
 ADMIN USER:
